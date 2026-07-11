@@ -1,0 +1,9 @@
+project: ogre
+target: ogre_deep_fuzz
+cmds:
+  - cmd: /mayhem/ogre_deep_fuzz
+    libfuzzer: true
+    dictionary: /mayhem/ogre_deep_fuzz.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ogre_deep_fuzz/testsuite

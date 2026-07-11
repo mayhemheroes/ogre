@@ -1,0 +1,8 @@
+project: ogre
+target: stream_fuzz
+cmds:
+  - cmd: /mayhem/stream_fuzz
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stream_fuzz/testsuite

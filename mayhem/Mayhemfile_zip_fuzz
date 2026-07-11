@@ -1,0 +1,8 @@
+project: ogre
+target: zip_fuzz
+cmds:
+  - cmd: /mayhem/zip_fuzz
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/zip_fuzz/testsuite
